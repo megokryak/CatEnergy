@@ -36,7 +36,67 @@
       </nav>
     </header>
     <main class="page-main">
-
+      <div class="form-wrapper">
+        <div class="form-order">
+          <h2 class="form__title">Подбор программы</h2>
+          <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <form class="order" action="#" method="get">
+            <div class="order__options">
+              <label class="order__cat-name">
+                Имя:* <input type="text" name="cat-name" class="order__input-name" placeholder="Барсик">
+              </label>
+              <label class="order__cat-weight">
+                Вес:* <input type="number" name="cat-weight" class="order__cat-weight" placeholder="7">
+              </label>
+              <label class="order__cat-age">
+                Вес:* <input type="number" name="cat-age" class="order__cat-age" placeholder="7">
+              </label>
+            </div>
+            <div class="order__what-you-want">
+              <label class="order__type-option">
+                <input type="radio" name="losing" class="order__losing">Похудение
+              </label>
+              <label class="order__type-option">
+                <input type="radio" name="mass" class="order__mass-gathering">Набор массы
+              </label>
+              <label class="order__type-option">
+                <input type="radio" name="idontknow" class="order__i-dont-know">Не знаю (нужен ваш совет)
+              </label>
+            </div>
+            <div class="order__contacts-owner">
+              <p class="order__title">Контактные данные (владельца кота)</p>
+              <label class="order__email">
+                Email:* <input type="Email" name="emil" class="order__input-email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label class="order__phone">
+                Телефон:* <input type="phone" name="phone" class="order__input-phone" placeholder="8 (960) 900-60-90">
+              </label>
+            </div>
+            <div class="order__comments">
+              <p class="order__title">Комментарий</p>
+              <textarea class="order__textarea">Расскажите обо всех повадках кота</textarea>
+            </div>
+            <div class="order__extra">
+              <label class="order__checkbox">
+                <input type="checkbox" name="sweetener" class="order__input-sweetener">Cахарозаменитель
+              </label>
+              <label class="order__checkbox">
+                <input type="checkbox" name="whater" class="order__input-whater">Питьевая вода
+              </label>
+              <label class="order__checkbox">
+                <input type="checkbox" name="milk" class="order__input-milk">Молоко
+              </label>
+              <label class="order__checkbox">
+                <input type="checkbox" name="vitamins" class="order__input-vitamins">Витамины
+              </label>
+            </div>
+            <div class="order_btn">
+              <button class="btn">Отправить заявку</button>
+            </div>
+            <p class="order__extra-text">* - Обязательные поля</p>
+          </form>
+        </div>
+      </div>
       <div class="catalog-wrapper">
         <section class="contacts">
           <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
