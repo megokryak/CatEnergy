@@ -1,0 +1,40 @@
+.site-list {
+  padding: 0;
+  margin: 0;
+}
+
+.site-list__item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 65px;
+  border-bottom: 1px solid #fafafa;
+}
+
+.site-list__link {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  color: #111111;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-list__link--active span::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  background: #68b738;
+}
+
+.site-list__link:hover {
+  color: rgba(17, 17, 17, 0.6);
+}
+
+.site-list__link:active {
+  color: rgba(17, 17, 17, 0.3);
+}
