@@ -33,3 +33,59 @@
   color: #111111;
   text-transform: uppercase;
 }
+
+.reviews__control-was span,
+.reviews__control-now span {
+  position: relative;
+}
+
+.reviews__control-was span::after,
+.reviews__control-now span::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  content: "";
+  height: 1px;
+  border-bottom: 1px dashed #bebebe;
+}
+
+.reviews__control-was:hover span::after,
+.reviews__control-now:hover span::after {
+  border-bottom: 1px solid #989898;
+}
+
+.reviews__control-was:active span::after,
+.reviews__control-now:active span::after {
+  border-bottom: none;
+}
+
+.reviews__control-progress {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  box-shadow: -4px 5px 10px 2px #ddd;
+}
+
+.reviews__control-progress:hover {
+  box-shadow: -4px 5px 7px 2px #c2c2c2;
+}
+
+.reviews__control-progress:active {
+  border: 1px solid #67b737;
+  box-shadow: -4px 5px 7px 2px #b8b8b8;
+}
+
+.reviews__control-progress-inner {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  background-color: #67b737;
+  border-radius: 50%;
+  z-index: 1;
+}
